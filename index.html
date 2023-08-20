@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Store</title>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel-slide">
+        <img src="image\1.png" alt="Slide 1">
+    </div>
+    <div class="carousel-slide">
+        <img src="image\2.png" alt="Slide 2">
+    </div>
+    <div class="carousel-slide">
+        <img src="image/3.png" alt="Slide 3">
+    </div>
+    <button id="prevBtn" class="carousel-button">&#8249;</button>
+    <button id="nextBtn" class="carousel-button">&#8250;</button>
+  </div>
+      
+    
+
+  <div class="gridconbox">
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="boxpd">
+      <div class="productpic">
+        <img class="imgproduct" src="image/5566.png" class="imgproduct" alt="Product 1" width="350px">
+      </div>
+    <h2 class="productname">Sky high mascara</h2>
+    <p>258 ฿</p>
+    <p2>หัวแปรง Flex Tower Brush ทำให้สามารถโค้งงอเข้ากับรูปตาได้เป็นอย่างดี<br>
+        ยิ่งปัดยิ่งพุ่ง ปัดแล้วขนตางอนยาวจริง<br>
+        มีส่วนผสมของ Bamboo Extract ที่ช่วยบำรุงขนตาให้ดูแข็งแรงและยาวขึ้นทุกครั้งที่ปัดอีกด้วย</p2>
+        <br><br>
+        <div class="buttbox">
+          <div id="counter">
+            <button class="buttsell" id="decrement1">-</button>
+            <span class="count" id="count1">0</span>
+            <button class="buttsell" id="increment1">+</button>
+          </div>
+          </div>
+    </div>
+    </div>
+    <div class="grid-item">
+        <div class="productpic">
+          <img src="/image/7910bf3d.jpg" class="imgproduct" alt="Product 2" width="350px">
+        </div>
+        <h2 class="productname">JUNG SAEM MOOL Skin Nuder Cover Layer Cushion #N19</h2>
+        <p>1,350 ฿</p>
+        <p2>คุชชั่นเนื้อบางเบา ให้ผิวสวยแบบธรรมชาติ<br>
+            การปกปิดดี คุมมันได้ดี ติดทนนาน<br>
+            ผิวสวยแบบสาวเกาหลี<br>
+            </p2>
+            <br>
+            <br>
+            <div class="buttbox">
+            <div id="counter">
+              <button class="buttsell" id="decrement2">-</button>
+              <span class="count" id="count2">0</span>
+              <button class="buttsell" id="increment2">+</button>
+            </div>
+            </div>
+    </div>
+    <div class="grid-item">
+        <div class="productpic">
+          <img src="/image/88888888.jpg"imgproduct alt="Product 3" width="350px">
+      </div>
+        <h2 class="productname">rom&nd Juicy Lasting Tint 5.5g (23 Nucadamia)</h2>
+        <p>329 ฿</p>
+        <p2>ลิปทินท์ผสมกลอส<br>
+            ไม่เหนียวเหนอะแหนะ ไม่ทำให้ปากดำ ปากดูฉํ่าวาว<br>
+            ฟินิชลุคธรรมชาติ สีสวยมาก<br>    
+            <br>
+            <br>
+            <div class="buttbox">
+              <div id="counter">
+                <button class="buttsell" id="decrement3">-</button>
+                <span class="count" id="count3">0</span>
+                <button class="buttsell" id="increment3">+</button>
+              </div>
+              </div>
+    </div>
+    <div class="grid-item">
+      <div class="productpic">
+          <img src="/image/11111.jpg" class="imgproduct" alt="Product 4"width="350px">
+      </div> 
+      <h2 class="productname">PERIPERA All Take Mood Technique Palette #03</h2>
+      <p>759 ฿</p>
+      <p2>พาเลทตาโทนสีนํ้าตาลทอง ชมพูตุ่น <br>
+          ชิมเมอร์กับกลิตเตอร์สวยตาแตกมาก!!<br>
+          สีโทนนี้สามารถใช้ได้ทุกวัน<br>
+          ฟินิชลุคสุภาพ ดูธรรมชาติ </p2>
+          <br>
+          <br>
+          <div class="buttbox">
+            <div id="counter">
+              <button class="buttsell" id="decrement4">-</button>
+              <span class="count" id="count4">0</span>
+              <button class="buttsell" id="increment4">+</button>
+            </div>
+            </div>
+    </div>
+</div>
+</div><button id="openModalBtn">
+<footer>
+  <div class="carttext">
+   ตรวจสอบรายการสินค้า
+  </div>
+</footer>
+</button>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>รายละเอียดคำสั่งซื้อ</h2>
+        <p>รายละเอียดผู้สั่ง</p>
+        <form action="">
+          ชื่อ <br><input class="textinput" type="text" placeholder="กรอกชื่อ" required><br><br>
+          เบอร์โทรศัพท์ <br><input class="textinput" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="กรอกเบอร์โทรศัพท์" required><br><br>
+          ที่อยู่ <br><textarea class="textareainput"  placeholder="กรอกที่อยู่" name="" id="" cols="30" rows="10" required></textarea>
+        
+        <br><br>
+        <p>สินค้า</p>
+        <ul id="productList"></ul>
+        <div class="option1">
+          <button type="submit" class="btn btn-save" data-bs-dismiss="modal" onclick="updateOrderList(); submitOrder();">ยืนยัน</button>
+          <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="red.js"></script>
+</body>
+</html>

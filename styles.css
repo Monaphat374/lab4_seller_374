@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#ffd1d1 ;
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  width: 100%;
+  display: none;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-button {
+  height: 95%;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+.gridconbox{
+  margin-left: -28vw;
+  margin-bottom: 3%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-rows: 1fr 1fr; /* Two rows */
+  gap: 100px; /* Gap between grid items */
+  max-width: 400px; /* Adjust this to your desired maximum width */
+  margin: auto; /* Center the grid horizontally */
+  padding: 20px;
+  background-color: transparent;
+
+}
+
+.grid-item {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.boxpd{
+  max-width: 90%;
+}
+
+.productpic{
+  max-width: 300px;
+}
+
+.buttbox{
+  margin-left: 40%;
+}
+
+#counter {
+  display: flex;
+  align-items: center;
+}
+.count{
+  margin: 20px;
+}
+.buttsell{
+  background-color: #d9b0cd;
+}
+
+
+/* Styles for the modal */
+.modal {
+  margin-top: -15%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 17% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  
+}
+
+
+
+
+/* Style for the close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.textinput{
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fbfbfb;
+  border: 2px solid transparent;
+  height: 36px;
+  box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+  :focus{
+      border: 1px solid #bda2cc;
+      border-radius: 4px;
+  }
+
+}
+
+.textareainput{
+  width: 60%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+#openModalBtn{
+  border: hidden;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(238, 108, 105);
+}
+
+#openModalBtn:hover{
+  color: #000000;
+  background-color: rgba(248, 150, 118, 0.66);
+}
+
+.carttext{
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+.productname{
+  color: #993333;
+}
+
+
+
+.btn-save{
+  background-color: rgb(40, 185, 40);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.btn-save:hover{
+  background-color: rgb(23, 153, 23);
+  color: white;
+}
+
+
+.btn-secondary{
+  background-color: rgb(195, 9, 9);
+  color: white;
+  border: none;
+  padding: 5px 10px ;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.btn-secondary:hover{
+  background-color: rgb(177, 24, 24);
+  color: white;
+}
